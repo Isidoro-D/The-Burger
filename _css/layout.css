@@ -1,0 +1,31 @@
+/* RESETS GERAIS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #141414;
+
+}
+
+.container {
+    width: min(90vw, 800vw);
+    padding-top: 4rem;
+    margin: auto;
+}
+
+/* ========== HEADER ========== */
+
+header nav div.top-bar ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}

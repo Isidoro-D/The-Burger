@@ -1,0 +1,25 @@
+* {
+    --orange: #FE6A0F;
+    --white: #ffff
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* ========== HEADER ========== */
+
+header nav div.top-bar ul li {
+    list-style: none;
+}
+
