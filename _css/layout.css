@@ -17,15 +17,102 @@ body {
 }
 
 .container {
-    width: min(90vw, 800vw);
     padding-top: 4rem;
     margin: auto;
 }
 
 /* ========== HEADER ========== */
 
-header nav div.top-bar ul{
+header nav div.top-bar ul {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     text-align: center;
+}
+
+/* ========== BANNER ========== */
+
+section.banner {
+    display: flex;
+    margin: 56px 0;
+    justify-content: space-around;
+    position: relative;
+}
+
+div.banner-burger img {
+    position: absolute;
+    right: 5%;
+}
+
+/* ========== SECTION SEARCH BURGER ========== */
+
+section.search-burger {
+    background-color: #1f1f1f;
+    padding: 50px 0;
+}
+
+section.search-burger div.container {
+    margin: 0 15vw;
+}
+
+div.choices {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========== SECTION BURGER ========== */
+
+section.hamburgers .gourmet-burger {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    justify-content: center;
+    margin: 64px 104px;
+}
+
+section.hamburgers .gourmet-burger .icon-burger {
+    padding: 15px 40px;
+    background-color: #2B2B2B;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+section.hamburgers .gourmet-burger .icon-burger img {
+    margin-bottom: -8vh;
+}
+
+section.hamburgers .gourmet-burger .info-burger {
+    padding: 48px 40px;
+    background-color: #1f1f1f;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+section.hamburgers .burgers {
+    position: relative;
+}
+
+section.hamburgers .gourmet-burger .burgers:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+section.hamburgers .burgers a {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+
+/* ========== FOOTER ========== */
+
+footer {
+    background-color: #1f1f1f;
+    padding: 72px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer #direitos {
+    font-size: 18px;
+    color: #5f5f5f;
 }

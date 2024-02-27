@@ -1,6 +1,25 @@
+/* RESETS GERAIS */
+
 * {
     --orange: #FE6A0F;
     --white: #ffff
+}
+
+h2, h3 {
+    font-size: 72px;
+    color: var(--white);
+    font-family: "Calistoga", serif;
+    font-weight: 300;
+}
+
+p {
+    color: var(--white);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 body {
@@ -12,10 +31,6 @@ body {
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: var(--white);
-}
 
 /* ========== HEADER ========== */
 
@@ -23,3 +38,91 @@ header nav div.top-bar ul li {
     list-style: none;
 }
 
+header nav div.top-bar ul li a.item-menu {
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+header nav div.top-bar ul li a:hover {
+    background-color: #2B2B2B;
+    transition: all 0.5s;
+}
+
+.btn-menu {
+    margin-left: 20vw;
+    border: 1px solid var(--white);
+    padding: 16px 40px;
+    border-radius: 5px;
+}
+
+/* ========== BANNER ========== */
+
+section.banner div.left-info h2 {
+    margin-bottom: 10vh;
+}
+
+section.banner div.left-info p {
+    margin-bottom: 15vh;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+section.banner a.btn-order {
+    background-color: var(--orange);
+    border: var(--orange);
+    padding: 20px 60px;
+    border-radius: 5px;
+}
+
+section.banner a.btn-order:hover {
+    background-color: #b44602;
+    transition: all 0.5s;
+}
+
+/* ========== SECTION SEARCH BURGER ========== */
+
+section.search-burger div.container h5 {
+    font-size: 32px;
+    color: var(--white);
+    margin-bottom: 48px;
+    font-weight: 300;
+}
+
+section.search-burger div.search input, section.search-burger div.category select {
+    padding: 16px 72px;
+    background-color: #2B2B2B;
+    border: 1px solid #2B2B2B ;
+    border-radius: 5px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+section.search-burger div.search i {
+    margin-right: -50px;
+    position: relative;
+    color: var(--white);
+}
+
+/* ========== SECTION BURGER ========== */
+
+section.hamburgers .info-burger small {
+   color: var(--white);
+}
+
+section.hamburgers .info-burger h3 {
+    font-size: 32px;
+}
+
+section.hamburgers .info-burger h4 {
+    font-size: 32px;
+    color: var(--orange);
+}
+
+section.hamburgers .gourmet-burger a {
+    background-color: var(--orange);
+    border: var(--orange);
+    padding: 8px 16px;
+    border-radius: 5px;
+}
