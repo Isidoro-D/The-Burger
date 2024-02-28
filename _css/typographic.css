@@ -100,7 +100,7 @@ section.search-burger div.search input, section.search-burger div.category selec
 
 
 section.search-burger div.search i {
-    margin-right: -50px;
+    margin-right: -3vw;
     position: relative;
     color: var(--white);
 }
@@ -120,7 +120,7 @@ section.hamburgers .info-burger h4 {
     color: var(--orange);
 }
 
-section.hamburgers .gourmet-burger a {
+section.hamburgers .gourmet-burger p {
     background-color: var(--orange);
     border: var(--orange);
     padding: 8px 16px;

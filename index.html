@@ -9,6 +9,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="_css/layout.css">
     <link rel="stylesheet" href="_css/typographic.css">
+    <link rel="stylesheet" href="_css/layout-responsive.css">
     <!--FONTES-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,56 +19,63 @@
 </head>
 
 <body>
-    <header class="container">
-        <nav>
-            <div class="top-bar">
-                <ul>
-                    <li><img src="./_assets/_images/Burger.svg" alt="logo da Burger"></li>
-                    <li><a class="item-menu" href="#">Início</a></li>
-                    <li><a class="item-menu" href="#burger">Burger</a></li>
-                    <li><a class="item-menu" href="#">Contato</a></li>
-                    <li><a class="btn-menu" href="#">Fazer pedido</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main class="container">
-        <section class="banner">
-            <div class="left-info">
-                <h2>O Hamburguer <br> mais delicioso. 😋</h2>
-                <p>A primeira hamburgueria virtual que você faz o <br> pedido online e come o burger através do <br>
-                    computador.
-                </p>
-                <a class="btn-order" href="#">Fazer pedido</a>
-            </div>
-            <div class="banner-burger">
-                <img src="./_assets/_images/burger-login 1.png" alt="X-Burguer">
-            </div>
-        </section>
-        <section class="search-burger">
-            <div class="container">
-                <h5>Pesquise o seu <br> Hamburguer favorito!</h5>
-                <div class="choices">
-                    <div class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Digite o nome do Burguer">
-                    </div>
-                    <div class="category">
-                        <select name="burgers" id="">
-                            <option class="placeh" value="">Selecionar categoria</option>
-                            <option value="texas-burger">Texas Burger</option>
-                            <option value="ohayo-burger">Ohayo Burger</option>
-                            <option value="kyoto-burger">Kyoto Burger</option>
-                            <option value="brazil-burger">Brazil Burger</option>
-                            <option value="toronto-burger">Toronto Burger</option>
-                            <option value="california-burger">California Burger</option>
-                        </select>
-                    </div>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="top-bar">
+                    <ul>
+                        <li><img src="./_assets/_images/Burger.svg" alt="logo da Burger"></li>
+                        <li><a class="item-menu" href="#">Início</a></li>
+                        <li><a class="item-menu" href="#burger">Burger</a></li>
+                        <li><a class="item-menu" href="#">Contato</a></li>
+                        <li><a class="btn-menu" href="#">Fazer pedido</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <div class="menu">
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div> -->
+        </header>
+        <main class="container">
+            <section class="banner">
+                <div class="left-info">
+                    <h2>O Hamburguer <br> mais delicioso.</h2>
+                    <p>A primeira hamburgueria virtual que você faz o <br> pedido online e come o burger através do <br>
+                        computador.
+                    </p>
+                    <a class="btn-order" href="#">Fazer pedido</a>
+                </div>
+                <div class="banner-burger">
+                    <img src="./_assets/_images/burger-login 1.png" alt="X-Burguer">
+                </div>
+            </section>
+    </div>
+    <section class="search-burger">
+        <div class="container">
+            <h5>Pesquise o seu <br> Hamburguer favorito!</h5>
+            <div class="choices">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Digite o nome do Burguer">
+                </div>
+                <div class="category">
+                    <select name="burgers" id="">
+                        <option selected dsabled value="">Selecionar categoria</option>
+                        <option value="texas-burger">Texas Burger</option>
+                        <option value="ohayo-burger">Ohayo Burger</option>
+                        <option value="kyoto-burger">Kyoto Burger</option>
+                        <option value="brazil-burger">Brazil Burger</option>
+                        <option value="toronto-burger">Toronto Burger</option>
+                        <option value="california-burger">California Burger</option>
+                    </select>
                 </div>
             </div>
-        </section>
-        <section class="hamburgers">
-
+        </div>
+    </section>
+    <section class="hamburgers">
+        <div class="container">
             <div class="gourmet-burger">
                 <div id="burger" class="burgers">
                     <div class="icon-burger">
@@ -78,7 +86,7 @@
                         <h3>Texas Burger</h3>
                         <h4>R$ 25,90</h4>
                     </div>
-                    <a href="#"> <small>Promoção</small></a>
+                    <p> <small>Promoção</small></p>
                 </div>
 
                 <div>
@@ -147,9 +155,9 @@
                 </div>
 
             </div>
-        </section>
+        </div>
+    </section>
     </main>
-
     <footer>
         <div class="logo">
             <img src="./_assets/_images/B7 • Burger.svg" alt="Logo B7 Burger">

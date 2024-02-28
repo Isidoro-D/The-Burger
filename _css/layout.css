@@ -19,6 +19,8 @@ body {
 .container {
     padding-top: 4rem;
     margin: auto;
+    max-width: 1200px;
+    width: 100%;
 }
 
 /* ========== HEADER ========== */
@@ -30,18 +32,44 @@ header nav div.top-bar ul {
     text-align: center;
 }
 
+/* header .menu-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .menuicon div {
+    font-size: 6px;
+    color: #ffff;
+} */
+
+/*
+
+flex-grow = define o quanto os filhos irão crescer te ocuparem o tamanho do pai, quanto maior o numero, maior será o espaço que o elemento irá ocupar
+
+flex-shrink = determina o quanto o máximo que um elemento poderá ser diminuido na tela
+
+flex-basis = determina qual será a largura miníma que um elemento ter
+
+flex = é a abreviação do 'flex-grow: 1', 'flex-shrink: 1' e 'flex-basis: 0'
+
+*/
+
 /* ========== BANNER ========== */
 
 section.banner {
     display: flex;
     margin: 56px 0;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
 }
 
 div.banner-burger img {
     position: absolute;
-    right: 5%;
+    right: 0;
 }
 
 /* ========== SECTION SEARCH BURGER ========== */
@@ -52,7 +80,7 @@ section.search-burger {
 }
 
 section.search-burger div.container {
-    margin: 0 15vw;
+    margin: 0 auto;
 }
 
 div.choices {
@@ -71,7 +99,7 @@ section.hamburgers .gourmet-burger {
 }
 
 section.hamburgers .gourmet-burger .icon-burger {
-    padding: 15px 40px;
+    padding: 15px 56px;
     background-color: #2B2B2B;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -97,7 +125,7 @@ section.hamburgers .gourmet-burger .burgers:hover {
     transition: all 0.5s;
 }
 
-section.hamburgers .burgers a {
+section.hamburgers .burgers p {
     position: absolute;
     top: 8%;
     left: 10%;
@@ -110,6 +138,7 @@ footer {
     padding: 72px 0;
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 footer #direitos {
